@@ -7,11 +7,14 @@ module.exports = function(app) {
       }));
      
      app.get('/',function(req,res){
-        res.render('index.html')
+        res.render('index')
      });
      app.get('/about',function(req,res){
-        res.render('about.html');
+        res.render('about');
     });
+    app.get('/about',function(req,res){
+      res.render('about2');
+  });
      
     app.get('/listall', function (req, res) {
       //res.render('about.html');
